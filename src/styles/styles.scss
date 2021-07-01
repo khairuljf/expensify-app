@@ -1,2 +1,13 @@
 @import './base/settings';
 @import './base/base';
+
+.navlink{
+    a{
+        margin: 5px;
+        text-decoration: none;
+    }
+    .active-now{
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
