@@ -1,9 +1,13 @@
 import React from 'react';
 
-const EditExpensify = () =>(
-    <div>
-        <p>Edit component</p>
-    </div>
-)
+const EditExpensify = (props) =>{
+    console.log(props)
+    return (
+       
+        <div>
+            <p>Edit component</p>
+        </div>
+    )
+}
 
 export default EditExpensify
