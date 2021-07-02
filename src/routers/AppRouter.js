@@ -19,7 +19,7 @@ import Header from '../components/header';
         <Switch>
             <Route path="/" component={Dashboard} exact={true} />
             <Route path="/create" component={CreateExpensify} />
-            <Route path="/edit/:id" component={EditExpensify} />
+            <Route path="/edit" component={EditExpensify} />
             <Route path="/help" component={HelpFunction}/>
             <Route  component={NotFoundPage}></Route>`
         </Switch>
