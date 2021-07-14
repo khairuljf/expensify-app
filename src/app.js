@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import AppRouter from './routers/AppRouter';
 import configureStore from './store/configureStore';
 import { addExpense } from './actions/expenses';
@@ -12,7 +13,6 @@ const store = configureStore();
 store.dispatch(addExpense({description:'Water'}))
 
 console.log(store.getState())
-
 
 
 
