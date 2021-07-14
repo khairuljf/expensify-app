@@ -12,8 +12,14 @@ const store = configureStore();
  
 store.dispatch(addExpense({description:'Water'}))
 
-console.log(store.getState())
+//console.log(store.getState())
+
+const jsx = (
+    <Provider store={store}>
+            <AppRouter />
+    </Provider>
+    
+)
 
 
-
-ReactDOM.render(<AppRouter />, document.getElementById('app'))
+ReactDOM.render(jsx, document.getElementById('app'))

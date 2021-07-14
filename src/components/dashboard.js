@@ -1,9 +1,10 @@
 import React from 'react';
+import ExpenseList from './ExpenseList';
 
 const Dashboard = () =>(
     <div>
-        <p>Loading from Dashboard</p>
+        <ExpenseList/>
     </div>
-   );
+)
 
 export default Dashboard;
