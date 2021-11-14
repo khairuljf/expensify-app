@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: './src/app.js',
+  mode: "development",
  // entry: './src/playground/hoc.js',
   output: {
     path: path.join(__dirname, 'public'),
@@ -11,7 +12,7 @@ module.exports = {
     rules: [{
       loader: 'babel-loader',
       test: /\.js$/,
-      exclude: /node_modules/
+      exclude: /(node_modules)/
     },
      {
       test: /\.s?css$/, // Thats mean s optional // Scss & css will load
@@ -22,9 +23,11 @@ module.exports = {
       ]
     }]
   },
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'eval-source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'public'),
+    static: {
+      directory: path.join(__dirname, "public/"),
+    },
     historyApiFallback:true
   }
 };
