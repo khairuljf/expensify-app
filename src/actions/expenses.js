@@ -1,8 +1,6 @@
 
 import uuid from 'react-uuid';
 
-
-
 export  const addExpense = ( 
     {
        description='',
@@ -22,8 +20,9 @@ export  const addExpense = (
 });
 
 
-// Remvoe Expense
-export const removeExpense = (id)=>({
+// Remove Expense
+
+export const removeExpense = (id) => ({
    type:'REMOVE_EXPENSE',
    id
 })
