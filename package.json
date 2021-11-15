@@ -7,7 +7,8 @@
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
-    "dev-server": "webpack serve"
+    "dev-server": "webpack serve",
+    "test": "jest"
   },
   "dependencies": {
     "babel-cli": "*",
@@ -19,6 +20,7 @@
     "babel-preset-react": "6.24.1",
     "chokidar": "*",
     "css-loader": "0.28.4",
+    "jest": "^27.3.1",
     "live-server": "*",
     "moment": "^2.29.1",
     "node-sass": "*",
