@@ -12,4 +12,3 @@ git remote - v --- url check
 **Need to add in "packages.josn" script**
 "heroku-postbuild": "yarn run build"
 git push heroku main
-
