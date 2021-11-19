@@ -9,7 +9,7 @@
     "build": "webpack --config webpack.prod.js",
     "dev-server": "webpack serve --open --config webpack.dev.js",
     "test": "jest",
-    "start": "node /server/server.js",
+    "start": "node server/server.js",
     "heroku-postbuild": "yarn run build"
   },
   "dependencies": {
