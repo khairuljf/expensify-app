@@ -22,6 +22,7 @@
     "babel-preset-react": "6.24.1",
     "chokidar": "*",
     "css-loader": "0.28.4",
+    "enzyme": "^3.11.0",
     "express": "4.15.4",
     "live-server": "*",
     "mini-css-extract-plugin": "^2.4.5",
@@ -45,8 +46,8 @@
     "webpack": "*"
   },
   "devDependencies": {
+    "jest": "20.0.4",
     "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.5.0",
-    "jest": "20.0.4"
+    "webpack-dev-server": "^4.5.0"
   }
 }
