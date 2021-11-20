@@ -29,6 +29,7 @@
     "moment": "^2.29.1",
     "node-sass": "*",
     "normalize": "*",
+    "numeral": "^2.0.6",
     "react": "*",
     "react-addons-shallow-compare": "^15.6.3",
     "react-dates": "^21.8.0",

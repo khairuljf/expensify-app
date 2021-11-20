@@ -1,13 +1,20 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import {removeExpense} from '../actions/expenses';
-import { connect } from 'react-redux';
+import moment from "moment";
+import numeral from 'numeral'
+
 
 
 const ExpenseListItem = (props) =>(
     <div>
        <h4>Title: {props.description}</h4>
-       ammount: {props.ammount}
+      <p>
+          {numeral(props.ammount/ 100).format('$0,0.00')}
+
+          -
+          crate at: {moment(props.createAt).format('MMMM Do, YYYY')}
+      </p>
         <p>My id is {props.id}</p>
         <Link to={`/edit/${props.id}`} >edit</Link>
         <button onClick={(e)=>{
@@ -19,4 +26,4 @@ const ExpenseListItem = (props) =>(
 
 );
 
-export default connect()(ExpenseListItem);
+export default ExpenseListItem;
