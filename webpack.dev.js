@@ -4,11 +4,13 @@ const path = require("path");
 
 module.exports = merge(common, {
     mode: 'development',
-    devtool: 'inline-source-map',
+    devtool: 'eval-source-map',
     devServer: {
-        static: {
-            directory: path.join(__dirname, "public/"),
-        },
+        static: [
+            {
+                directory: path.join(__dirname, "public"),
+            }
+        ],
         historyApiFallback:true
     }
 });

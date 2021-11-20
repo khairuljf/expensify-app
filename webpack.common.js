@@ -8,7 +8,6 @@ module.exports = {
         path: path.join(__dirname, 'public'),
         filename: 'bundle.js'
     },
-
     module: {
         rules: [{
             loader: 'babel-loader',
@@ -34,7 +33,6 @@ module.exports = {
                 ]
             }]
     },
-
     plugins: [
         new MiniCssExtractPlugin({
             filename: "style.css",

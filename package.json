@@ -5,6 +5,7 @@
   "author": "Khairul Islam",
   "license": "MIT",
   "scripts": {
+    "serve": "live-server public/",
     "build": "webpack --config webpack.prod.js",
     "dev-server": "webpack serve --open --config webpack.dev.js",
     "test": "jest",
@@ -22,6 +23,7 @@
     "chokidar": "*",
     "css-loader": "0.28.4",
     "express": "4.15.4",
+    "live-server": "*",
     "mini-css-extract-plugin": "^2.4.5",
     "moment": "^2.29.1",
     "node-sass": "*",

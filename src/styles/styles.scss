@@ -1,6 +1,10 @@
 @import "./base/settings";
 @import "./base/base";
 
+body{
+  background: orange;
+}
+
 .navlink {
   a {
     margin: 5px;
