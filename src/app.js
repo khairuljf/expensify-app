@@ -6,6 +6,9 @@ import configureStore from './store/configureStore';
 import { addExpense } from './actions/expenses';
 import { setTextFilter, sortByAmmount } from './actions/filters';
 import getVisibleExpense from './selectors/expenses';
+import './firebase/firebase'
+
+
 
 import './styles/styles.scss';
 
@@ -17,7 +20,7 @@ const jsx = (
     <Provider store={store}>
             <AppRouter />
     </Provider>
-    
+
 )
 
 

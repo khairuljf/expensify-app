@@ -24,6 +24,7 @@
     "css-loader": "0.28.4",
     "enzyme": "^3.11.0",
     "express": "4.15.4",
+    "firebase": "^9.5.0",
     "live-server": "*",
     "mini-css-extract-plugin": "^2.4.5",
     "moment": "^2.29.1",
@@ -39,12 +40,14 @@
     "react-router-dom": "*",
     "react-uuid": "*",
     "redux": "*",
+    "redux-thunk": "2.2.0",
     "sass": "*",
     "sass-loader": "*",
     "style-loader": "*",
     "uuid": "*",
     "validator": "*",
-    "webpack": "*"
+    "webpack": "*",
+    "yarn": "^1.22.17"
   },
   "devDependencies": {
     "jest": "20.0.4",
