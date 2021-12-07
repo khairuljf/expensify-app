@@ -1,23 +1,27 @@
+// SET_TEXT_FILTER
+export const setTextFilter = (text = '') => ({
+  type: 'SET_TEXT_FILTER',
+  text
+});
 
-// Set Text Filter
-export const setTextFilter = (text = '')=>({
-    type:'SET_TEXT_FILTER',
-    text
-})
+// SORT_BY_DATE
+export const sortByDate = () => ({
+  type: 'SORT_BY_DATE'
+});
 
-export const sortByAmmount = () =>({
-    type:'SET_AMMOUNT_FILTER'
-})
+// SORT_BY_AMOUNT
+export const sortByAmount = () => ({
+  type: 'SORT_BY_AMOUNT'
+});
 
-export const sortByDate = () =>({
-        type:'SET_DATE_FILTER'
-})
+// SET_START_DATE
+export const setStartDate = (startDate) => ({
+  type: 'SET_START_DATE',
+  startDate
+});
 
-export const setStartDate = (startDate)=>({
-    type:'FILTER_START_DATE',
-    startDate
-})
-export const setEndDate = (endDate)=>({
-    type:'FILTER_END_DATE',
-    endDate
-})
+// SET_END_DATE
+export const setEndDate = (endDate) => ({
+  type: 'SET_END_DATE',
+  endDate
+});

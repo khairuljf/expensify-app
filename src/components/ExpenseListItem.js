@@ -1,29 +1,16 @@
 import React from 'react';
-import {Link} from "react-router-dom";
-import {removeExpense} from '../actions/expenses';
-import moment from "moment";
-import numeral from 'numeral'
+import { Link } from 'react-router-dom';
+import moment from 'moment';
+import numeral from 'numeral';
 
-
-
-const ExpenseListItem = (props) =>(
+const ExpenseListItem = ({ id, description, amount, createdAt }) => (
+  <Link className="list-item" to={`/edit/${id}`}>
     <div>
-       <h4>Title: {props.description}</h4>
-      <p>
-          {numeral(props.ammount/ 100).format('$0,0.00')}
-
-          -
-          crate at: {moment(props.createAt).format('MMMM Do, YYYY')}
-      </p>
-        <p>My id is {props.id}</p>
-        <Link to={`/edit/${props.id}`} >edit</Link>
-        <button onClick={(e)=>{
-           props.dispatch(removeExpense(props.id))
-       }}>
-        Remove 
-       </button>
+      <h3 className="list-item__title">{description}</h3>
+      <span className="list-item__sub-title">{moment(createdAt).format('MMMM Do, YYYY')}</span>
     </div>
-
+    <h3 className="list-item__data">{numeral(amount / 100).format('$0,0.00')}</h3>
+  </Link>
 );
 
 export default ExpenseListItem;

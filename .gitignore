@@ -1,7 +1,5 @@
 .idea
-node_modules
-public/bundle.js
-public/bundle.js.LICENSE.txt
-public/bundle.js.map
-public/style.css
-public/style.css.map
+node_modules/
+public/dist/
+.env.test
+.env.development
